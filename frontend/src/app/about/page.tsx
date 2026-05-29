@@ -3,7 +3,7 @@ import styles from './page.module.css';
 
 export default function About() {
   return (
-    <main style={{ paddingTop: '80px' }}>
+    <main>
       <section className={styles.aboutHero}>
         <div className={styles.heroBg}>
           <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMqJyzKVOAo6BBpUabt2oKAwJ9h0XWGyNHIbqwuA_iOocdB9PmgDRi0u_wEN7VFyje98_GkefHguIvE-uuqteZ4yQ67HN-r0upTaqFxxhETvw5rsGlZQ4w4S3cCqRgUwvMTkZPUOS7Axjtzze1pS-lwzXPvyirucyhUBoh4GHv9JCVaeaIRhs0kXu_lIl1jqDVsy0xHtgSMWb7fhtlGH2UuUB-VVFYevHlpCHrF-S3LkY83Eqeus3XU7kJ95YxhfLKXZTPugsXxoyx" alt="Corporate Headquarters" />

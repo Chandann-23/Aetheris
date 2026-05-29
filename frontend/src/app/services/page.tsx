@@ -4,7 +4,7 @@ import ConsoleSimulator from '../../components/ui/ConsoleSimulator';
 
 export default function Services() {
   return (
-    <main style={{ paddingTop: '80px' }}>
+    <main>
       <section className={styles.servicesHero}>
         <div className={styles.heroBg}>
           <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfMFI_0K1gvuJpXuClNSJFskactyWRtndQb4jwDGxLfx8lXMU4uNgUTBSCQNGXxh7DnVpNJR1ofAXrCHOycYT5gd5Rij9UrWDKlrxL2zHH2ITn6pdZfmV7ZqMVVZjRq31MLAJCbSg9aQCIccIgLYs1qpLaj43ZZdWwK_QkpZRWGnDYdc1gakHE6sXEq_iNaAvC4o6tpo8qbe-6MqhMg692oUFaiE3G03TPrecr6D1ADWF60G1u45WOMutjl6cEi51L5-TEaGufAwxa" alt="Engineering Hero" />

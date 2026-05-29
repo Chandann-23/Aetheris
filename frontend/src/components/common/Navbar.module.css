@@ -1,3 +1,14 @@
+.navLogo {
+  color: var(--primary);
+  font-family: var(--font-headline-lg);
+  font-weight: 800;
+  font-size: clamp(22px, 4vw, 30px);
+  letter-spacing: -0.03em;
+  line-height: 1;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
 .nav {
   position: fixed;
   top: 0;
@@ -40,6 +51,16 @@
 @media (min-width: 768px) {
   .navLinks {
     display: flex;
+  }
+}
+
+/* navContainer mobile override */
+@media (max-width: 767px) {
+  .navContainer {
+    padding: 0 20px;
+  }
+  .navActions {
+    gap: 12px;
   }
 }
 

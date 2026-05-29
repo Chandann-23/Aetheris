@@ -1,9 +1,15 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Aetheris | The Future of Marketplace Retail",
   description: "Curating the pinnacle of technological design. More than a marketplace, an evolution of how we interact with utility.",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
 };
 
 import Navbar from "@/components/common/Navbar";

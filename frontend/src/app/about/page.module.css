@@ -1,16 +1,21 @@
+/* About Page Scoped Styles */
+
+/* ===================== HERO ===================== */
 .aboutHero {
   position: relative;
-  height: auto;
-  min-height: 80vh;
+  min-height: 100svh;
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 120px var(--container-padding-desktop) 80px var(--container-padding-desktop);
+  padding: 120px var(--container-padding-desktop) 80px;
   overflow: hidden;
   background-color: var(--surface-black);
 }
+
 @media (min-width: 768px) {
-  .aboutHero { height: 100vh; padding: 0 var(--container-padding-desktop); }
+  .aboutHero {
+    padding: 0 var(--container-padding-desktop);
+  }
 }
 
 .heroBg {
@@ -36,7 +41,7 @@
 
 .subtitle {
   color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   display: block;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -45,25 +50,28 @@
 .title {
   color: var(--surface-white);
   max-width: 900px;
+  line-height: 1.05;
 }
 
 .heroAction {
-  margin-top: 48px;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 16px;
   align-items: flex-start;
 }
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .heroAction { flex-direction: row; }
 }
 
 .btnPrimary {
   background-color: var(--surface-white);
   color: var(--surface-black);
-  padding: 24px 48px;
+  padding: 20px 40px;
   font-weight: bold;
+  text-align: center;
   transition: all 0.3s ease;
+  display: inline-block;
 }
 .btnPrimary:hover {
   background-color: var(--electric-accent);
@@ -73,33 +81,34 @@
 .heroDesc {
   color: rgba(255, 255, 255, 0.7);
   max-width: 400px;
-  margin-top: 16px;
-}
-@media (min-width: 768px) {
-  .heroDesc { margin-top: 0; }
+  line-height: 1.6;
 }
 
-/* Vision Section */
+/* ===================== VISION SECTION ===================== */
 .visionSection {
-  padding: 160px var(--container-padding-desktop);
+  padding: var(--section-gap) var(--container-padding-desktop);
   background-color: var(--surface-white);
 }
 
 .visionGrid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 32px;
-  align-items: center;
+  gap: 48px;
+  align-items: start;
 }
 @media (min-width: 768px) {
-  .visionGrid { grid-template-columns: repeat(12, 1fr); }
+  .visionGrid { 
+    grid-template-columns: repeat(12, 1fr); 
+    gap: 32px;
+    align-items: center;
+  }
 }
 
 .visionContent {
   grid-column: span 12;
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 32px;
 }
 @media (min-width: 768px) {
   .visionContent { grid-column: span 6; }
@@ -113,17 +122,19 @@
 .visionDesc {
   color: var(--text-secondary);
   max-width: 600px;
+  line-height: 1.7;
 }
 
 .stats {
-  padding-top: 32px;
+  padding-top: 28px;
   border-top: 1px solid var(--border-subtle);
   display: flex;
-  gap: 48px;
+  gap: 36px;
+  flex-wrap: wrap;
 }
 
 .statValue { display: block; color: var(--surface-black); }
-.statLabel { color: var(--text-secondary); text-transform: uppercase; }
+.statLabel { color: var(--text-secondary); text-transform: uppercase; font-size: 11px; letter-spacing: 0.08em; }
 
 .visionImageWrapper {
   grid-column: span 12;
@@ -136,7 +147,8 @@
 .visionImage {
   aspect-ratio: 3 / 4;
   border: 1px solid var(--surface-black);
-  padding: 16px;
+  padding: 12px;
+  overflow: hidden;
 }
 .visionImage img {
   width: 100%;
@@ -145,6 +157,7 @@
   filter: grayscale(100%);
 }
 
+/* desktop floating badge */
 .visionBadge {
   display: none;
   position: absolute;
@@ -152,22 +165,29 @@
   left: -40px;
   background-color: var(--surface-black);
   color: var(--surface-white);
-  padding: 32px;
-  width: 256px;
+  padding: 28px;
+  width: 240px;
 }
 @media (min-width: 1024px) {
   .visionBadge { display: block; }
 }
-.visionBadgeTitle { color: rgba(255, 255, 255, 0.5); display: block; margin-bottom: 16px; text-transform: uppercase; }
+.visionBadgeTitle { 
+  color: rgba(255, 255, 255, 0.5); 
+  display: block; 
+  margin-bottom: 12px; 
+  text-transform: uppercase; 
+  font-size: 11px;
+  letter-spacing: 0.1em;
+}
 
-/* Pillars Section */
+/* ===================== PILLARS SECTION ===================== */
 .pillarsSection {
-  padding: 160px var(--container-padding-desktop);
+  padding: var(--section-gap) var(--container-padding-desktop);
   background-color: var(--surface-container-low);
 }
 
 .pillarsHeader {
-  margin-bottom: 96px;
+  margin-bottom: 64px;
   max-width: 700px;
 }
 .pillarsPreTitle {
@@ -176,6 +196,7 @@
   display: block;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  font-size: 11px;
 }
 .pillarsTitle {
   color: var(--surface-black);
@@ -193,37 +214,66 @@
 .pillarCard {
   border: 1px solid var(--surface-black);
   background-color: var(--surface-white);
-  padding: 48px;
+  padding: clamp(28px, 4vw, 48px);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  min-height: 500px;
+  min-height: 360px;
   transition: all 0.5s ease;
+  gap: 0;
 }
+
+/* stacked border handling: top-only for mobile, left-only for desktop */
 .pillarCard:not(:first-child) {
   border-top: 0;
 }
 @media (min-width: 768px) {
-  .pillarCard:not(:first-child) { border-top: 1px solid var(--surface-black); border-left: 0; }
+  .pillarCard:not(:first-child) { 
+    border-top: 1px solid var(--surface-black); 
+    border-left: 0; 
+  }
 }
 
 .pillarCard:hover {
   background-color: var(--surface-black);
 }
 
-.pillarIcon { font-size: 48px; color: var(--surface-black); margin-bottom: 32px; transition: color 0.3s ease; }
-.pillarTitle { color: var(--surface-black); margin-bottom: 24px; text-transform: uppercase; transition: color 0.3s ease; }
-.pillarDesc { color: var(--text-secondary); transition: color 0.3s ease; }
-.pillarLink { color: var(--surface-white); text-decoration: underline; opacity: 0; transition: opacity 0.3s ease; padding-top: 32px; }
+.pillarIcon { 
+  font-size: 40px; 
+  color: var(--surface-black); 
+  margin-bottom: 28px; 
+  transition: color 0.3s ease; 
+  display: block;
+}
+.pillarTitle { 
+  color: var(--surface-black); 
+  margin-bottom: 16px; 
+  text-transform: uppercase; 
+  transition: color 0.3s ease; 
+}
+.pillarDesc { 
+  color: var(--text-secondary); 
+  transition: color 0.3s ease; 
+  line-height: 1.6;
+  flex: 1;
+}
+.pillarLink { 
+  color: var(--surface-white); 
+  text-decoration: underline; 
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+  padding-top: 24px; 
+  display: block;
+  font-size: 13px;
+}
 
 .pillarCard:hover .pillarIcon,
 .pillarCard:hover .pillarTitle { color: var(--surface-white); }
 .pillarCard:hover .pillarDesc { color: rgba(255, 255, 255, 0.7); }
 .pillarCard:hover .pillarLink { opacity: 1; cursor: pointer; }
 
-/* Global Infra Section */
+/* ===================== GLOBAL INFRA SECTION ===================== */
 .infraSection {
-  padding: 160px 0;
+  padding: var(--section-gap) 0;
   background-color: var(--surface-black);
   color: var(--surface-white);
   position: relative;
@@ -239,35 +289,55 @@
 .infraGrid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 64px;
+  gap: 48px;
 }
 @media (min-width: 1024px) {
-  .infraGrid { grid-template-columns: repeat(12, 1fr); }
+  .infraGrid { 
+    grid-template-columns: repeat(12, 1fr); 
+    gap: 64px;
+  }
 }
 
-.infraContent { grid-column: span 12; }
+.infraContent { 
+  grid-column: span 12; 
+}
 @media (min-width: 1024px) { .infraContent { grid-column: span 5; } }
 
-.infraTitle { line-height: 1.1; margin-bottom: 32px; }
+.infraTitle { 
+  line-height: 1.1; 
+  margin-bottom: 28px; 
+}
 
 .infraFeatureBox {
-  padding: 32px;
+  padding: clamp(20px, 3vw, 32px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   transition: border-color 0.3s ease;
 }
 .infraFeatureBox:hover { border-color: var(--surface-white); }
-.infraFeatureLabel { color: rgba(255, 255, 255, 0.5); margin-bottom: 8px; text-transform: uppercase; }
+.infraFeatureLabel { 
+  color: rgba(255, 255, 255, 0.5); 
+  margin-bottom: 8px; 
+  text-transform: uppercase; 
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  display: block;
+}
 
 .infraMap {
   grid-column: span 12;
-  height: 600px;
+  height: 400px;
   background-color: var(--surface-black);
   border: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
   overflow: hidden;
 }
-@media (min-width: 1024px) { .infraMap { grid-column: span 7; } }
+@media (min-width: 1024px) { 
+  .infraMap { 
+    grid-column: span 7; 
+    height: 600px;
+  } 
+}
 
 .infraMap img {
   width: 100%;
@@ -281,22 +351,29 @@
 
 .mapStatus {
   position: absolute;
-  bottom: 32px;
-  right: 32px;
+  bottom: 24px;
+  right: 24px;
   background-color: var(--surface-white);
   color: var(--surface-black);
-  padding: 24px;
-  width: 288px;
+  padding: 20px;
+  width: calc(100% - 48px);
+  max-width: 280px;
   backdrop-filter: blur(12px);
 }
-.statusLabel { display: block; margin-bottom: 8px; text-transform: uppercase; opacity: 0.6; }
+@media (min-width: 480px) {
+  .mapStatus {
+    width: 260px;
+  }
+}
+
+.statusLabel { display: block; margin-bottom: 6px; text-transform: uppercase; opacity: 0.6; font-size: 10px; letter-spacing: 0.1em; }
 .statusFlex { display: flex; justify-content: space-between; align-items: flex-end; }
-.statusValue { font-size: 32px; font-weight: bold; line-height: 1; }
+.statusValue { font-size: 28px; font-weight: bold; line-height: 1; }
 .statusUnit { font-size: 10px; text-transform: uppercase; }
 
-/* CTA Section */
+/* ===================== CTA SECTION ===================== */
 .ctaSection {
-  padding: 160px var(--container-padding-desktop);
+  padding: var(--section-gap) var(--container-padding-desktop);
   text-align: center;
   background-color: var(--surface-white);
   border-top: 1px solid var(--border-subtle);
@@ -305,102 +382,115 @@
 .ctaTitle {
   font-weight: 900;
   color: var(--surface-black);
-  margin-bottom: 48px;
+  margin-bottom: 40px;
   text-transform: uppercase;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.04em;
+  line-height: 1;
 }
 
 .ctaButtons {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
   justify-content: center;
+  align-items: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .ctaButtons { flex-direction: row; }
 }
 
 .btnCtaPrimary {
   background-color: var(--surface-black);
   color: var(--surface-white);
-  padding: 24px 64px;
+  padding: 20px 56px;
   transition: all 0.3s ease;
+  display: inline-block;
 }
 .btnCtaPrimary:hover { background-color: var(--electric-accent); }
 
 .btnCtaOutline {
   border: 1px solid var(--surface-black);
   color: var(--surface-black);
-  padding: 24px 64px;
+  padding: 20px 56px;
   transition: all 0.3s ease;
+  display: inline-block;
 }
 .btnCtaOutline:hover {
   background-color: var(--surface-black);
   color: var(--surface-white);
 }
 
+/* ===================== MOBILE OVERRIDES ===================== */
 @media (max-width: 768px) {
-  .heroAction {
-    margin-top: 32px;
+  .aboutHero {
+    padding: 100px 20px 60px;
   }
+
+  .heroAction {
+    margin-top: 28px;
+    width: 100%;
+  }
+
   .btnPrimary {
     width: 100%;
-    padding: 16px 32px;
-    text-align: center;
+    padding: 16px 24px;
   }
-  .visionContent {
+
+  .visionSection {
+    padding: 60px 20px;
+  }
+
+  .visionImage {
+    aspect-ratio: 4 / 3;
+    padding: 8px;
+  }
+
+  .stats {
     gap: 24px;
   }
-  .stats {
-    padding-top: 24px;
-    gap: 32px;
+
+  .pillarsSection {
+    padding: 60px 20px;
   }
-  .visionImage {
-    padding: 8px;
-    aspect-ratio: 4 / 3;
-  }
+
   .pillarsHeader {
-    margin-bottom: 48px;
+    margin-bottom: 40px;
   }
+
   .pillarCard {
-    padding: 24px;
     min-height: auto;
-    gap: 32px;
-  }
-  .pillarIcon {
-    font-size: 36px;
-    margin-bottom: 16px;
-  }
-  .pillarTitle {
-    margin-bottom: 16px;
-  }
-  .infraGrid {
-    gap: 40px;
-  }
-  .infraFeatureBox {
-    padding: 24px;
-    margin-bottom: 20px;
-  }
-  .infraMap {
-    height: 350px;
-  }
-  .mapStatus {
-    bottom: 16px;
-    right: 16px;
-    padding: 16px;
-    width: calc(100% - 32px);
-  }
-  .statusValue {
-    font-size: 28px;
-  }
-  .ctaButtons {
-    width: 100%;
     gap: 16px;
   }
-  .btnCtaPrimary, .btnCtaOutline {
+
+  .pillarIcon {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  .infraSection {
+    padding: 60px 0;
+  }
+
+  .infraContainer {
+    padding: 0 20px;
+  }
+
+  .infraMap {
+    height: 280px;
+  }
+
+  .ctaSection {
+    padding: 60px 20px;
+  }
+
+  .ctaButtons {
     width: 100%;
-    padding: 16px 32px;
+  }
+
+  .btnCtaPrimary,
+  .btnCtaOutline {
+    width: 100%;
+    padding: 16px 24px;
     text-align: center;
   }
 }
-

@@ -50,7 +50,7 @@ export default function Products() {
   ];
 
   return (
-    <main style={{ paddingTop: '80px' }}>
+    <main>
       <header className={styles.header}>
         <div className={styles.headerTitle}>
           <span className={`${styles.headerSubtitle} font-label-mono`}>Hardware Evolution</span>
@@ -93,7 +93,7 @@ export default function Products() {
               </div>
               <div className={styles.productInfo}>
                 <div className={styles.productHeader}>
-                  <h3 className="font-headline-md uppercase tracking-tight" style={{ fontSize: '24px' }}>{product.name}</h3>
+                  <h3 className={`${styles.productTitle} font-label-mono`}>{product.name}</h3>
                   <span className={`${styles.productPrice} font-label-mono`}>{product.price}</span>
                 </div>
                 <p className={`${styles.productDesc} font-body-md`}>{product.desc}</p>

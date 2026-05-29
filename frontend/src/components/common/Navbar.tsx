@@ -23,7 +23,7 @@ export default function Navbar() {
     <nav className={`${styles.nav} ${scrolled ? styles.navScrolled : ''}`}>
       <div className={styles.navContainer}>
         <div className="flex items-center gap-12">
-          <Link href="/" className="font-display-lg font-headline-lg" style={{ color: 'var(--primary)', fontWeight: '800', letterSpacing: '-0.03em', fontSize: '32px' }}>
+          <Link href="/" className={styles.navLogo}>
             Aetheris
           </Link>
           <div className={styles.navLinks}>
@@ -58,6 +58,8 @@ export default function Navbar() {
           <button 
             className={`${styles.iconBtn} ${styles.menuToggle}`} 
             onClick={() => setMenuOpen(!menuOpen)}
+            aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={menuOpen}
             suppressHydrationWarning
           >
             <span className="material-symbols-outlined" style={{ color: 'var(--on-surface)' }}>

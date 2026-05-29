@@ -1,9 +1,12 @@
+/* Services Page Scoped Styles */
+
+/* ===================== HERO ===================== */
 .servicesHero {
-  min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 var(--container-padding-desktop);
+  padding: 120px var(--container-padding-desktop) 80px;
   position: relative;
   overflow: hidden;
   background-color: var(--surface-black);
@@ -36,21 +39,23 @@
 
 .title {
   color: var(--surface-white);
-  margin-bottom: 32px;
+  margin-bottom: 28px;
   line-height: 1;
 }
 
 .heroDesc {
   color: var(--surface-variant);
   max-width: 600px;
-  margin-bottom: 48px;
+  margin-bottom: 40px;
+  line-height: 1.6;
 }
 
 .heroActions {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
 }
+
 @media (min-width: 640px) {
   .heroActions { flex-direction: row; }
 }
@@ -58,9 +63,10 @@
 .btnPrimary {
   background-color: var(--surface-white);
   color: var(--surface-black);
-  padding: 24px 48px;
+  padding: 20px 40px;
   text-transform: uppercase;
   font-weight: bold;
+  text-align: center;
   transition: all 0.3s ease;
 }
 .btnPrimary:hover {
@@ -71,13 +77,14 @@
 .btnOutline {
   border: 1px solid var(--surface-variant);
   color: var(--surface-white);
-  padding: 24px 48px;
+  padding: 20px 40px;
   text-transform: uppercase;
+  text-align: center;
   transition: all 0.3s ease;
 }
 .btnOutline:hover { border-color: var(--surface-white); }
 
-/* Highlights Section */
+/* ===================== HIGHLIGHTS SECTION ===================== */
 .highlightsSection {
   padding: var(--section-gap) var(--container-padding-desktop);
   background-color: var(--surface-white);
@@ -86,10 +93,10 @@
 .highlightsGrid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 32px;
+  gap: 24px;
 }
 @media (min-width: 1024px) {
-  .highlightsGrid { grid-template-columns: repeat(12, 1fr); }
+  .highlightsGrid { grid-template-columns: repeat(12, 1fr); gap: 32px; }
 }
 
 .industrialBorder {
@@ -100,22 +107,22 @@
 
 .hlCard1 {
   grid-column: span 12;
-  padding: 48px;
+  padding: clamp(24px, 4vw, 48px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 500px;
+  min-height: 400px;
   position: relative;
   overflow: hidden;
 }
-@media (min-width: 1024px) { .hlCard1 { grid-column: span 8; } }
+@media (min-width: 1024px) { .hlCard1 { grid-column: span 8; min-height: 500px; } }
 
-.hlLabel { color: var(--secondary); margin-bottom: 16px; display: block; }
-.hlTitle { color: var(--primary); margin-bottom: 24px; }
-.hlDesc { color: var(--text-secondary); max-width: 400px; }
+.hlLabel { color: var(--secondary); margin-bottom: 16px; display: block; letter-spacing: 0.1em; }
+.hlTitle { color: var(--primary); margin-bottom: 20px; }
+.hlDesc { color: var(--text-secondary); max-width: 400px; line-height: 1.6; }
 
 .hlIcon {
-  margin-top: 48px;
+  margin-top: 40px;
   transition: transform 0.5s ease;
 }
 .hlCard1:hover .hlIcon { transform: translateX(16px); }
@@ -135,59 +142,60 @@
 .hlCard2 {
   grid-column: span 12;
   background-color: var(--surface-black);
-  padding: 48px;
+  padding: clamp(24px, 4vw, 48px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 500px;
+  min-height: 320px;
   border: 1px solid transparent;
   transition: all 0.3s;
 }
-@media (min-width: 1024px) { .hlCard2 { grid-column: span 4; } }
+@media (min-width: 1024px) { .hlCard2 { grid-column: span 4; min-height: 500px; } }
 .hlCard2:hover { border-color: var(--electric-accent); transform: translateY(-4px); }
 
-.hlCard2Title { color: var(--surface-white); margin-bottom: 24px; }
+.hlCard2Title { color: var(--surface-white); margin-bottom: 20px; }
 .hlCard2Desc { color: var(--surface-variant); }
-.hlCard2Icon { margin-top: auto; color: var(--electric-accent); font-size: 48px; }
+.hlCard2Icon { margin-top: auto; color: var(--electric-accent); font-size: 40px; padding-top: 24px; }
 
 .hlCard3 {
   grid-column: span 12;
-  padding: 48px;
+  padding: clamp(24px, 4vw, 48px);
   display: flex;
   flex-direction: column;
-  min-height: 400px;
+  min-height: 320px;
 }
 @media (min-width: 1024px) { .hlCard3 { grid-column: span 6; } }
 
 .apiBox {
   background-color: var(--surface-container);
-  padding: 24px;
+  padding: 20px;
   border-radius: 2px;
   font-size: 11px;
   color: var(--on-surface-variant);
-  overflow: hidden;
-  margin-top: 32px;
+  overflow-x: auto;
+  margin-top: 24px;
 }
-.apiBox code { display: block; }
+.apiBox code { display: block; white-space: pre; }
 
 .hlCard4 {
   grid-column: span 12;
-  padding: 48px;
+  padding: clamp(24px, 4vw, 48px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: var(--surface-container-lowest);
+  min-height: 280px;
 }
 @media (min-width: 1024px) { .hlCard4 { grid-column: span 6; } }
 
 .specsGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
+  gap: 24px;
 }
 @media (min-width: 1200px) { .specsGrid { grid-template-columns: repeat(4, 1fr); } }
 
-/* API CTA Section */
+/* ===================== API CTA SECTION ===================== */
 .ctaSection {
   padding: var(--section-gap) var(--container-padding-desktop);
   background-color: var(--surface-container-low);
@@ -200,24 +208,36 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 64px;
+  align-items: flex-start;
+  gap: 48px;
 }
 @media (min-width: 1024px) {
-  .ctaContainer { flex-direction: row; }
+  .ctaContainer { flex-direction: row; align-items: center; gap: 64px; }
 }
 
 .ctaContent { flex: 1; }
-.ctaTitle { color: var(--primary); margin-bottom: 32px; letter-spacing: -0.05em; line-height: 1.1; }
-.ctaDesc { color: var(--text-secondary); margin-bottom: 48px; max-width: 600px; }
+.ctaTitle { 
+  color: var(--primary); 
+  margin-bottom: 24px; 
+  letter-spacing: -0.05em; 
+  line-height: 1.1; 
+}
+.ctaDesc { 
+  color: var(--text-secondary); 
+  margin-bottom: 40px; 
+  max-width: 600px; 
+  line-height: 1.6;
+}
 
 .btnCta {
   background-color: var(--primary);
   color: var(--on-primary);
-  padding: 24px 48px;
+  padding: 20px 40px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  font-weight: bold;
   transition: background-color 0.3s;
+  display: inline-block;
 }
 .btnCta:hover { background-color: var(--electric-accent); }
 
@@ -225,93 +245,89 @@
   flex: 1;
   width: 100%;
   background-color: var(--surface-white);
-  padding: 48px;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  padding: clamp(24px, 4vw, 48px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
   position: relative;
+  overflow: hidden;
 }
-@media (min-width: 1024px) { .ctaConsole { width: auto; } }
 
 .consoleAlert {
   position: absolute;
-  top: -16px;
-  right: -16px;
+  top: -14px;
+  right: -14px;
   background-color: var(--nothing-red);
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--surface-white);
   font-weight: 900;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .consoleHeader {
   display: flex;
   align-items: center;
-  gap: 16px;
-  padding-bottom: 24px;
+  gap: 12px;
+  padding-bottom: 20px;
   border-bottom: 1px solid var(--surface-container);
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 .consoleTerminal {
   opacity: 0.8;
+  font-size: 13px;
 }
-.consoleLine { margin-bottom: 8px; }
+.consoleLine { 
+  margin-bottom: 8px; 
+  font-size: 12px;
+  line-height: 1.6;
+  word-break: break-all;
+}
 
+/* ===================== MOBILE OVERRIDES ===================== */
 @media (max-width: 768px) {
-  .heroContent {
-    margin-top: 64px;
+  .servicesHero {
+    padding: 100px 20px 60px;
+    min-height: 100svh;
   }
+
+  .title {
+    margin-bottom: 20px;
+  }
+
   .heroActions {
     flex-direction: column;
-    gap: 16px;
+    gap: 12px;
     width: 100%;
   }
-  .btnPrimary, .btnOutline {
+
+  .btnPrimary,
+  .btnOutline {
     width: 100%;
-    padding: 16px 32px;
+    padding: 16px 24px;
     text-align: center;
   }
-  .hlCard1 {
-    padding: 24px;
-    min-height: 400px;
+
+  .highlightsSection {
+    padding: 60px 20px;
   }
+
   .hlCard1Bg {
     width: 100%;
-    height: 50%;
+    height: 40%;
     bottom: 0;
     right: 0;
   }
-  .hlCard2 {
-    padding: 24px;
-    min-height: 320px;
+
+  .ctaSection {
+    padding: 60px 20px;
   }
-  .hlCard3 {
-    padding: 24px;
-    min-height: auto;
-  }
-  .hlCard4 {
-    padding: 24px;
-  }
-  .specsGrid {
-    gap: 24px;
-  }
-  .ctaContainer {
-    gap: 40px;
-  }
+
   .btnCta {
     width: 100%;
-    padding: 16px 32px;
     text-align: center;
-  }
-  .ctaConsole {
-    padding: 24px;
-  }
-  .consoleAlert {
-    top: -8px;
-    right: -8px;
+    padding: 16px 24px;
   }
 }
-
