@@ -51,8 +51,8 @@ export default function About() {
           <div className={styles.visionImageWrapper}>
             <div className={styles.visionImage}>
               <img 
-                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80" 
-                alt="Bespoke materials and audiophile headphones close-up design detail" 
+                src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=800&q=80" 
+                alt="Bespoke materials and creative design workstation layout closeup design detail" 
               />
             </div>
             <div className={styles.visionBadge}>

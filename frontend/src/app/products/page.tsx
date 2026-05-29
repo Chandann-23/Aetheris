@@ -27,7 +27,7 @@ export default function Products() {
       name: "JBL Go 3 Speaker",
       price: "₹2,499",
       desc: "Ultra-portable waterproof Bluetooth speaker delivering surprisingly big audio and punchy bass.",
-      image: "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=600&q=80",
       category: "electronics",
       badge: "Featured"
     },
@@ -61,7 +61,7 @@ export default function Products() {
       name: "Portronics Ruffpad 15\"",
       price: "₹899",
       desc: "Re-writable LCD writing tablet designed for quick monospaced sketch outlines and creative brainstorming.",
-      image: "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=600&q=80",
       category: "electronics"
     },
     {
@@ -69,7 +69,7 @@ export default function Products() {
       name: "Anker PowerPort III 20W",
       price: "₹1,199",
       desc: "Ultra-compact Gallium Nitride fast charger optimized for rapid phone and accessory power routing.",
-      image: "https://images.unsplash.com/photo-1622445262465-2481c4574875?auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=600&q=80",
       category: "electronics"
     },
     {
@@ -89,7 +89,7 @@ export default function Products() {
       name: "Philips Hue 9W Smart Bulb",
       price: "₹1,999",
       desc: "Premium smart lighting bulb with millions of dimmable colors for fine ambient environment tuning.",
-      image: "https://images.unsplash.com/photo-1550985616-10810253b84d?auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?auto=format&fit=crop&w=600&q=80",
       category: "smarthome",
       badge: "Pro Choice"
     },
@@ -98,7 +98,7 @@ export default function Products() {
       name: "Wipro 16A Smart Plug",
       price: "₹999",
       desc: "High-power smart energy connector with micro-power consumption and scheduling utilities.",
-      image: "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1595246140625-573b715d11ec?auto=format&fit=crop&w=600&q=80",
       category: "smarthome"
     },
     {
@@ -106,7 +106,7 @@ export default function Products() {
       name: "TP-Link Tapo C100 Camera",
       price: "₹1,899",
       desc: "1080p Home Security WiFi Camera with advanced motion detection and night vision optics.",
-      image: "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1524143180209-ac7b58f99e32?auto=format&fit=crop&w=600&q=80",
       category: "smarthome"
     },
     {
@@ -122,7 +122,7 @@ export default function Products() {
       name: "Oakter Oakremote Controller",
       price: "₹1,249",
       desc: "Universal WiFi smart infrared remote controller linking old workspace electronics to voice controls.",
-      image: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?auto=format&fit=crop&w=600&q=80",
       category: "smarthome"
     },
     {
@@ -130,7 +130,7 @@ export default function Products() {
       name: "Syska Smart Strip Light (5m)",
       price: "₹1,499",
       desc: "Flexible, color-changing, app-controlled LED strip light for ambient desk backlighting.",
-      image: "https://images.unsplash.com/photo-1568454537842-d933259bb258?auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1550483835-7d2ecb29b913?auto=format&fit=crop&w=600&q=80",
       category: "smarthome"
     },
     {
@@ -138,7 +138,7 @@ export default function Products() {
       name: "Qubo Smart Gas Sensor",
       price: "₹1,799",
       desc: "Intelligent leakage gas sensor featuring alarm sounds and instant smartphone alert protocols.",
-      image: "https://images.unsplash.com/photo-1507646227500-4d389b0012be?auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1606206591513-adbfdd83594e?auto=format&fit=crop&w=600&q=80",
       category: "smarthome"
     },
     {
@@ -146,7 +146,7 @@ export default function Products() {
       name: "MI Temp & Humidity Monitor 2",
       price: "₹699",
       desc: "High-precision biological climate sensor displaying real-time environmental comfort index metrics.",
-      image: "https://images.unsplash.com/photo-1585338107529-13afc5f02586?auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80",
       category: "smarthome",
       badge: "Smart Sync"
     },
@@ -159,7 +159,7 @@ export default function Products() {
       name: "Quechua Waterproof Jacket",
       price: "₹1,999",
       desc: "Highly durable windproof, waterproof rain shell optimized for dual dynamic workspace commutes.",
-      image: "https://images.unsplash.com/photo-1544923246-77307dd654cb?auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=600&q=80",
       category: "apparel"
     },
     {
@@ -167,7 +167,7 @@ export default function Products() {
       name: "Nike Dri-FIT Training Tee",
       price: "₹1,695",
       desc: "Breathable performance knit top designed for thermal heat and moisture regulation.",
-      image: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=600&q=80",
       category: "apparel"
     },
     {
@@ -175,7 +175,7 @@ export default function Products() {
       name: "Puma Ess Cargo Pants",
       price: "₹2,199",
       desc: "High-comfort utility cargo pants containing double-welded mechanical pocket storage panels.",
-      image: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=600&q=80",
       category: "apparel"
     },
     {
@@ -183,7 +183,7 @@ export default function Products() {
       name: "Adidas Techfit Base-Layer",
       price: "₹1,499",
       desc: "Compression isolation knit designed for absolute muscle sync optimization.",
-      image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80",
       category: "apparel",
       badge: "Performance"
     },
@@ -192,7 +192,7 @@ export default function Products() {
       name: "Sparx Running Sneakers",
       price: "₹1,299",
       desc: "Featherweight engineered mesh running shoes optimizing impact-reduction and comfort.",
-      image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=600&q=80",
       category: "apparel"
     },
     {
@@ -200,7 +200,7 @@ export default function Products() {
       name: "Quechua Fleece Gloves",
       price: "₹499",
       desc: "Recycled fleece gloves featuring touchscreen-conducting sensory sensor fingertips.",
-      image: "https://images.unsplash.com/photo-1516934024742-b461fba4760f?auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1543349689-9a4d426bee87?auto=format&fit=crop&w=600&q=80",
       category: "apparel"
     },
     {
@@ -208,7 +208,7 @@ export default function Products() {
       name: "Fort Collins Windcheater",
       price: "₹1,899",
       desc: "Water-resistant outerwear windcheater with storm protection and high structural integrity.",
-      image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&w=600&q=80",
       category: "apparel",
       badge: "Storm Proof"
     },
@@ -217,7 +217,7 @@ export default function Products() {
       name: "Fastrack Reflex Beat Band",
       price: "₹2,199",
       desc: "Sleek fitness tracker tracking active heart rate and daily activity logs.",
-      image: "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=600&q=80",
       category: "apparel"
     },
 
@@ -229,7 +229,7 @@ export default function Products() {
       name: "Redgear Shadow Blade",
       price: "₹2,499",
       desc: "Mechanical gaming keyboard with tactile blue switches and custom rainbow LED backlighting.",
-      image: "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1601445638532-3c6f6c3aa1d6?auto=format&fit=crop&w=600&q=80",
       category: "devtech",
       badge: "Limited Edition"
     },
@@ -238,7 +238,7 @@ export default function Products() {
       name: "Raspberry Pi Zero 2 W",
       price: "₹1,650",
       desc: "Miniature modular developer workstation board housing a quad-core 64-bit ARM CPU engine.",
-      image: "https://images.unsplash.com/photo-1600541519468-4a9121c6095f?auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80",
       category: "devtech"
     },
     {
@@ -246,7 +246,7 @@ export default function Products() {
       name: "Logitech K380 Keyboard",
       price: "₹2,299",
       desc: "Multi-device wireless low-profile keyboard offering surgical typing comfort across developer setups.",
-      image: "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=600&q=80",
       category: "devtech",
       badge: "Fast Storage"
     },
@@ -255,7 +255,7 @@ export default function Products() {
       name: "SanDisk Portable SSD 128G",
       price: "₹1,899",
       desc: "Compact high-speed portable solid state storage drive designed for secure codebase backups.",
-      image: "https://images.unsplash.com/photo-1587831990711-23ca6441447b?auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1590247813693-5541d1c609f1?auto=format&fit=crop&w=600&q=80",
       category: "devtech"
     },
     {
@@ -263,7 +263,7 @@ export default function Products() {
       name: "Lapcare Ergonomic Mouse",
       price: "₹699",
       desc: "Wireless silent ergonomic vertical mouse offering comfort during long dev sprints.",
-      image: "https://images.unsplash.com/photo-1547082299-de196ea013d6?auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=600&q=80",
       category: "devtech",
       badge: "Surgical Tactility"
     },
@@ -272,7 +272,7 @@ export default function Products() {
       name: "TP-Link Gigabit Switch",
       price: "₹999",
       desc: "5-port desktop gigabit ethernet network expansion switch for wired workspace local grids.",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1631553127989-53b7fba4f6c5?auto=format&fit=crop&w=800&q=80",
       category: "devtech"
     },
     {
@@ -280,7 +280,7 @@ export default function Products() {
       name: "Gizga Ergonomic Laptop Stand",
       price: "₹799",
       desc: "Multi-angle aluminum riser stand designed to minimize visual and neck strain during coding sessions.",
-      image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1616440347437-b1c73416efc2?auto=format&fit=crop&w=600&q=80",
       category: "devtech"
     },
     {
@@ -288,7 +288,7 @@ export default function Products() {
       name: "AmazonBasics Travel Adapter",
       price: "₹899",
       desc: "Universal workspace adapter equipped with multiple built-in international plug routing shapes.",
-      image: "https://images.unsplash.com/photo-1622445262465-2481c4574875?auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1563968743333-044cef800494?auto=format&fit=crop&w=600&q=80",
       category: "devtech"
     }
   ];
