@@ -8,14 +8,14 @@ export default function ConsoleSimulator() {
       <div>
         <div className={styles.consoleHeader}>
           <span className="material-symbols-outlined" style={{ color: 'var(--secondary)' }}>terminal</span>
-          <span className="font-label-mono" style={{ color: 'var(--secondary)', textTransform: 'uppercase' }}>Developer Console</span>
+          <span className="font-label-mono" style={{ color: 'var(--secondary)', textTransform: 'uppercase' }}>VIP Concierge Console</span>
         </div>
         <div className={`${styles.consoleTerminal} font-label-mono font-body-md`}>
-          <p className={styles.consoleLine} style={{ color: 'var(--secondary)' }}>$ curl -X POST https://api.aetheris.com/v1/deploy</p>
-          <p className={styles.consoleLine} style={{ color: 'var(--primary)' }}>{'>'} Initializing secure handshake...</p>
-          <p className={styles.consoleLine} style={{ color: 'var(--secondary)' }}>{'>'} Auth success. Token: [Redacted]</p>
-          <p className={styles.consoleLine} style={{ color: 'var(--primary)' }}>{'>'} Environment: Production</p>
-          <p className={styles.consoleLine} style={{ color: 'var(--electric-accent)' }}>{'>'} System status: Nominal</p>
+          <p className={styles.consoleLine} style={{ color: 'var(--secondary)' }}>$ aetheris-vip check-status --active</p>
+          <p className={styles.consoleLine} style={{ color: 'var(--primary)' }}>{'>'} Connecting to Aetheris VIP database...</p>
+          <p className={styles.consoleLine} style={{ color: 'var(--secondary)' }}>{'>'} Handshake secure. Welcome, Elite Creator.</p>
+          <p className={styles.consoleLine} style={{ color: 'var(--primary)' }}>{'>'} Active Upgrades: Beryllium Audio Calibration, Custom Engraving [ENABLED]</p>
+          <p className={styles.consoleLine} style={{ color: 'var(--electric-accent)' }}>{'>'} Status: Concierge Priority Active</p>
         </div>
       </div>
     </div>
