@@ -87,25 +87,25 @@ export default function Home() {
           <div className={styles.infraBg}></div>
           <div className={`${styles.infraGrid} px-container-padding-desktop`}>
             <div>
-              <span className={`${styles.infraLabel} font-label-mono`}>Built for Scale</span>
-              <h2 className={`${styles.infraTitle} font-headline-lg`}>Infrastructure that powers the future.</h2>
+              <span className={`${styles.infraLabel} font-label-mono`}>Shop with Confidence</span>
+              <h2 className={`${styles.infraTitle} font-headline-lg`}>A seamless shopping experience crafted for you.</h2>
               <div className={styles.infraFeatures}>
                 <div>
-                  <span className={`material-symbols-outlined ${styles.infraIcon}`}>security</span>
-                  <h5 className={`${styles.infraFeatureTitle} font-headline-md`}>Encrypted Logistics</h5>
-                  <p className={`${styles.infraFeatureDesc} font-body-md`}>End-to-end security protocols for every transaction and physical delivery.</p>
+                  <span className={`material-symbols-outlined ${styles.infraIcon}`}>shield</span>
+                  <h5 className={`${styles.infraFeatureTitle} font-headline-md`}>Secure Checkout</h5>
+                  <p className={`${styles.infraFeatureDesc} font-body-md`}>Encrypted transaction pipelines backed by state-of-the-art payment security routing.</p>
                 </div>
                 <div>
-                  <span className={`material-symbols-outlined ${styles.infraIcon}`}>bolt</span>
-                  <h5 className={`${styles.infraFeatureTitle} font-headline-md`}>Hyper-Speed API</h5>
-                  <p className={`${styles.infraFeatureDesc} font-body-md`}>Sub-millisecond latency for real-time inventory and developer integrations.</p>
+                  <span className={`material-symbols-outlined ${styles.infraIcon}`}>local_shipping</span>
+                  <h5 className={`${styles.infraFeatureTitle} font-headline-md`}>Insured Curation</h5>
+                  <p className={`${styles.infraFeatureDesc} font-body-md`}>Insured carbon-neutral courier dispatch in customized shock-absorbing protective packaging.</p>
                 </div>
               </div>
             </div>
             <div className={styles.infraVisual}>
               <div className={styles.infraCircle}>
                 <div className={styles.infraInnerCircle}>
-                  <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" alt="Global server network infrastructure" />
+                  <img src="https://images.unsplash.com/photo-1540959733332-eab4deceeaf7?auto=format&fit=crop&w=800&q=80" alt="Minimalist boutique storefront retail space" />
                 </div>
               </div>
             </div>
