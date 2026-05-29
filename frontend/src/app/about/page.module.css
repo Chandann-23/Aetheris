@@ -429,11 +429,13 @@
   .heroAction {
     margin-top: 28px;
     width: 100%;
+    align-items: stretch;
   }
 
   .btnPrimary {
     width: 100%;
     padding: 16px 24px;
+    text-align: center;
   }
 
   .visionSection {
@@ -485,6 +487,7 @@
 
   .ctaButtons {
     width: 100%;
+    align-items: stretch;
   }
 
   .btnCtaPrimary,

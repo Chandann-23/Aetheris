@@ -177,6 +177,17 @@
   pointer-events: none;
   transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 40px 20px;
+}
+
+@media (max-height: 500px) {
+  .mobileMenu {
+    justify-content: flex-start;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .navScrolled + .mobileMenu,

@@ -176,7 +176,7 @@ export default function Checkout() {
 
               {isProcessing ? (
                 /* STEP 3: ACTIVE GATEWAY LOADING SCREEN */
-                <div className="bg-white border border-[#E5E5E7] p-12 md:p-24 flex flex-col items-center justify-center gap-6 text-center shadow-sm">
+                <div className="bg-white border border-[#E5E5E7] p-6 sm:p-12 md:p-24 flex flex-col items-center justify-center gap-6 text-center shadow-sm">
                   <div className="w-12 h-12 border-4 border-black border-t-[#008DDA] rounded-full animate-spin"></div>
                   <h3 className="text-xl font-bold uppercase tracking-tight text-black mt-2">
                     Syncing Gateway Ledger
@@ -206,7 +206,7 @@ export default function Checkout() {
 
                   {/* Right Column: Sidebar */}
                   <aside className="lg:col-span-4 lg:sticky lg:top-32 space-y-8">
-                    <div className="bg-white border border-[#E5E5E7] p-8 shadow-sm">
+                    <div className="bg-white border border-[#E5E5E7] p-6 sm:p-8 shadow-sm">
                       <h3 className="text-xl font-bold uppercase tracking-tight text-black mb-6 border-b border-[#E5E5E7] pb-4">
                         In Your Bag
                       </h3>
@@ -319,7 +319,7 @@ export default function Checkout() {
             </>
           ) : (
             /* STEP 4: SUCCESS DISPATCH SCREEN */
-            <div className="max-w-xl mx-auto bg-white border border-[#E5E5E7] p-12 md:p-16 text-center shadow-sm">
+            <div className="max-w-xl mx-auto bg-white border border-[#E5E5E7] p-6 sm:p-12 md:p-16 text-center shadow-sm">
               <div className="w-16 h-16 bg-[#E8F8F5] border border-[#2ECC71] rounded-full flex items-center justify-center text-[#27AE60] text-3xl font-bold mx-auto mb-6">
                 ✓
               </div>
