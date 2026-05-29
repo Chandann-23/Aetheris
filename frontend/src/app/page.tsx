@@ -36,30 +36,6 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={styles.section}>
-          <div className="asymmetric-grid">
-            <div className={styles.featureLg}>
-              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfNqXEVzOIMi7VSr53PZM0EjIVlW6gccYBG2YPaP8bDqF4D1lZH69tdyJKIvluBIQRc7S8vsWy_fAIfyzN4JzjV0EUC3E6-ok6wpdUW3CDPf3rXEZnqfdHCGHxlSvUgWeSpDkonu9qYnRt9za83XMHMf7ErlIPYq4Xc1fVeMmgn1WG4GDud-GNvmx-LukZGdYEj6kQJUEVPdIvon0M-jjYwcaKJZW4d9RE4_W6IQTVcpEnpcpw03px6ekpC9QPCNc0GFx5oko_3Uc4" alt="Next-Gen Electronics" />
-              <div className={styles.featureLgContent}>
-                <h2 className={`${styles.featureLgTitle} font-headline-lg`}>Next-Gen Electronics</h2>
-                <p className={`${styles.featureLgDesc} font-body-lg`}>Surgical precision in every circuit. Engineering meets aesthetic perfection.</p>
-                <Link href="/products" className={`${styles.linkWithArrow} font-label-mono`}>
-                  SHOP NOW <span className="material-symbols-outlined">arrow_forward</span>
-                </Link>
-              </div>
-            </div>
-            <div className={styles.featureSmContainer}>
-              <div className={styles.featureSm}>
-                <div style={{ zIndex: 10 }}>
-                  <h3 className={`${styles.featureSmTitle} font-headline-md`}>Developer Tech Gear</h3>
-                  <p className={`${styles.featureSmDesc} font-label-mono`}>Optimized for productivity.</p>
-                </div>
-                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQVArscjoYw2AJUR0x8psLhfExfxw2SUFiaYGRmx85VqVfPNOFfkULfikKk4oLTvnjMoYo3yxG3eI4w9SAa828xVFjK7Mg4D7liC3BxvpYJvLE8jHz8eBcyKVgfelN1HNa-4GGS64beBLGkdJOpmaULQp2o4PCZGzkcfNZ86jW0GuWe7evHTSexfYeKokHQGWnVDm_beF1zlOln2aRkt5xTY_Bn2lBnI0zI6D-mjhhpuwEwpdXFGIF8BbvS_6G2jNuISD5NL3_Rve8" alt="Developer Tech Gear" />
-                <Link href="/products" className={`${styles.featureSmLink} font-label-mono`}>VIEW HARDWARE</Link>
-              </div>
-            </div>
-          </div>
-        </section>
 
         <section className={styles.trendingSection}>
           <div className={styles.trendingHeader}>
