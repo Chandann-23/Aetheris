@@ -3,7 +3,7 @@ import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server';
 // Define which routes require authentication before rendering
 const isProtectedRoute = createRouteMatcher(['/checkout(.*)']);
 
-export default clerkMiddleware(async (auth, req) => {
+export const proxy = clerkMiddleware(async (auth, req) => {
   if (isProtectedRoute(req)) {
     await auth.protect(); // Redirects unauthenticated users directly to OAuth sign-in
   }
