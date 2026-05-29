@@ -6,6 +6,7 @@ import styles from './Navbar.module.css';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -53,6 +54,41 @@ export default function Navbar() {
           <Link href="/checkout" className={styles.iconBtn} suppressHydrationWarning>
             <span className="material-symbols-outlined" style={{ color: 'var(--on-surface)' }}>shopping_cart</span>
             <span className={styles.badge}>2</span>
+          </Link>
+          <button 
+            className={`${styles.iconBtn} ${styles.menuToggle}`} 
+            onClick={() => setMenuOpen(!menuOpen)}
+            suppressHydrationWarning
+          >
+            <span className="material-symbols-outlined" style={{ color: 'var(--on-surface)' }}>
+              {menuOpen ? 'close' : 'menu'}
+            </span>
+          </button>
+        </div>
+      </div>
+      {/* Mobile Menu Overlay */}
+      <div className={`${styles.mobileMenu} ${menuOpen ? styles.mobileMenuOpen : ''}`}>
+        <div className={styles.mobileLinks}>
+          <Link 
+            href="/products" 
+            className={`${styles.mobileLink} ${isActive('/products') ? styles.mobileLinkActive : ''} font-label-mono`}
+            onClick={() => setMenuOpen(false)}
+          >
+            Products
+          </Link>
+          <Link 
+            href="/services" 
+            className={`${styles.mobileLink} ${isActive('/services') ? styles.mobileLinkActive : ''} font-label-mono`}
+            onClick={() => setMenuOpen(false)}
+          >
+            Services
+          </Link>
+          <Link 
+            href="/about" 
+            className={`${styles.mobileLink} ${isActive('/about') ? styles.mobileLinkActive : ''} font-label-mono`}
+            onClick={() => setMenuOpen(false)}
+          >
+            About
           </Link>
         </div>
       </div>

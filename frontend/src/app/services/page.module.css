@@ -259,3 +259,59 @@
   opacity: 0.8;
 }
 .consoleLine { margin-bottom: 8px; }
+
+@media (max-width: 768px) {
+  .heroContent {
+    margin-top: 64px;
+  }
+  .heroActions {
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+  .btnPrimary, .btnOutline {
+    width: 100%;
+    padding: 16px 32px;
+    text-align: center;
+  }
+  .hlCard1 {
+    padding: 24px;
+    min-height: 400px;
+  }
+  .hlCard1Bg {
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    right: 0;
+  }
+  .hlCard2 {
+    padding: 24px;
+    min-height: 320px;
+  }
+  .hlCard3 {
+    padding: 24px;
+    min-height: auto;
+  }
+  .hlCard4 {
+    padding: 24px;
+  }
+  .specsGrid {
+    gap: 24px;
+  }
+  .ctaContainer {
+    gap: 40px;
+  }
+  .btnCta {
+    width: 100%;
+    padding: 16px 32px;
+    text-align: center;
+  }
+  .ctaConsole {
+    padding: 24px;
+  }
+  .consoleAlert {
+    top: -8px;
+    right: -8px;
+  }
+}
+

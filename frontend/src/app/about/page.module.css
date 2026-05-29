@@ -1,15 +1,16 @@
 .aboutHero {
   position: relative;
-  height: 921px;
+  height: auto;
+  min-height: 80vh;
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 0 var(--container-padding-desktop);
+  padding: 120px var(--container-padding-desktop) 80px var(--container-padding-desktop);
   overflow: hidden;
   background-color: var(--surface-black);
 }
 @media (min-width: 768px) {
-  .aboutHero { height: 100vh; }
+  .aboutHero { height: 100vh; padding: 0 var(--container-padding-desktop); }
 }
 
 .heroBg {
@@ -337,3 +338,69 @@
   background-color: var(--surface-black);
   color: var(--surface-white);
 }
+
+@media (max-width: 768px) {
+  .heroAction {
+    margin-top: 32px;
+  }
+  .btnPrimary {
+    width: 100%;
+    padding: 16px 32px;
+    text-align: center;
+  }
+  .visionContent {
+    gap: 24px;
+  }
+  .stats {
+    padding-top: 24px;
+    gap: 32px;
+  }
+  .visionImage {
+    padding: 8px;
+    aspect-ratio: 4 / 3;
+  }
+  .pillarsHeader {
+    margin-bottom: 48px;
+  }
+  .pillarCard {
+    padding: 24px;
+    min-height: auto;
+    gap: 32px;
+  }
+  .pillarIcon {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+  .pillarTitle {
+    margin-bottom: 16px;
+  }
+  .infraGrid {
+    gap: 40px;
+  }
+  .infraFeatureBox {
+    padding: 24px;
+    margin-bottom: 20px;
+  }
+  .infraMap {
+    height: 350px;
+  }
+  .mapStatus {
+    bottom: 16px;
+    right: 16px;
+    padding: 16px;
+    width: calc(100% - 32px);
+  }
+  .statusValue {
+    font-size: 28px;
+  }
+  .ctaButtons {
+    width: 100%;
+    gap: 16px;
+  }
+  .btnCtaPrimary, .btnCtaOutline {
+    width: 100%;
+    padding: 16px 32px;
+    text-align: center;
+  }
+}
+
