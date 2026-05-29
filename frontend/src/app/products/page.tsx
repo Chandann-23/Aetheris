@@ -77,7 +77,7 @@ export default function Products() {
       name: "SanDisk Dual Drive 128GB",
       price: "₹1,099",
       desc: "High-speed USB Type-A and Type-C flash drive for seamless workspace data transfers and offline backups.",
-      image: "https://images.unsplash.com/photo-1601524909162-be87252be298?auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1563206767-5b18f218e8de?auto=format&fit=crop&w=600&q=80",
       category: "electronics"
     },
 
@@ -98,7 +98,7 @@ export default function Products() {
       name: "Wipro 16A Smart Plug",
       price: "₹999",
       desc: "High-power smart energy connector with micro-power consumption and scheduling utilities.",
-      image: "https://images.unsplash.com/photo-1595246140625-573b715d11ec?auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=600&q=80",
       category: "smarthome"
     },
     {
@@ -106,7 +106,7 @@ export default function Products() {
       name: "TP-Link Tapo C100 Camera",
       price: "₹1,899",
       desc: "1080p Home Security WiFi Camera with advanced motion detection and night vision optics.",
-      image: "https://images.unsplash.com/photo-1524143180209-ac7b58f99e32?auto=format&fit=crop&w=600&q=80",
+      image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=600&q=80",
       category: "smarthome"
     },
     {

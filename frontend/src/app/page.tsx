@@ -105,7 +105,7 @@ export default function Home() {
             <div className={styles.infraVisual}>
               <div className={styles.infraCircle}>
                 <div className={styles.infraInnerCircle}>
-                  <img src="https://images.unsplash.com/photo-1540959733332-eab4deceeaf7?auto=format&fit=crop&w=800&q=80" alt="Minimalist boutique storefront retail space" />
+                  <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80" alt="Premium minimalist boutique store display" />
                 </div>
               </div>
             </div>
