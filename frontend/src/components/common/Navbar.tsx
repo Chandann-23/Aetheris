@@ -2,10 +2,12 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { SignInButton, UserButton, useUser } from '@clerk/nextjs';
 import styles from './Navbar.module.css';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const { isSignedIn } = useUser();
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
 
@@ -48,9 +50,17 @@ export default function Navbar() {
           </div>
         </div>
         <div className={styles.navActions}>
-          <button className={styles.iconBtn} suppressHydrationWarning>
-            <span className="material-symbols-outlined" style={{ color: 'var(--on-surface)' }}>person</span>
-          </button>
+          {/* Clerk Auth: show Sign In button when logged out, avatar when logged in */}
+          {!isSignedIn ? (
+            <SignInButton mode="modal">
+              <button className={`${styles.navLink} font-label-mono`} suppressHydrationWarning>
+                Sign In
+              </button>
+            </SignInButton>
+          ) : (
+            <UserButton />
+          )}
+
           <Link href="/checkout" className={styles.iconBtn} suppressHydrationWarning>
             <span className="material-symbols-outlined" style={{ color: 'var(--on-surface)' }}>shopping_cart</span>
             <span className={styles.badge}>2</span>
@@ -92,6 +102,26 @@ export default function Navbar() {
           >
             About
           </Link>
+          {/* Mobile: Clerk auth links */}
+          {!isSignedIn ? (
+            <SignInButton mode="modal">
+              <button
+                className={`${styles.mobileLink} font-label-mono`}
+                onClick={() => setMenuOpen(false)}
+                suppressHydrationWarning
+              >
+                Sign In
+              </button>
+            </SignInButton>
+          ) : (
+            <Link
+              href="/checkout"
+              className={`${styles.mobileLink} ${isActive('/checkout') ? styles.mobileLinkActive : ''} font-label-mono`}
+              onClick={() => setMenuOpen(false)}
+            >
+              Checkout
+            </Link>
+          )}
         </div>
       </div>
     </nav>
