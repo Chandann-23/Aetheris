@@ -1,0 +1,127 @@
+.footer {
+  margin-top: var(--section-gap);
+  background-color: var(--surface-container-lowest);
+  border-top: 1px solid var(--outline-variant);
+  padding: 80px var(--container-padding-desktop) 48px var(--container-padding-desktop);
+  display: flex;
+  flex-direction: column;
+}
+
+.footerGrid {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto 80px auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+}
+
+@media (min-width: 768px) {
+  .footerGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.footerBrand {
+  grid-column: span 1;
+}
+
+@media (min-width: 768px) {
+  .footerBrand {
+    grid-column: span 2;
+  }
+}
+
+.footerTitle {
+  display: block;
+  margin-bottom: 24px;
+  color: var(--on-surface);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.footerDesc {
+  color: var(--text-secondary);
+  max-width: 440px;
+  line-height: 1.6;
+}
+
+.footerColumnTitle {
+  color: var(--primary);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+}
+
+.footerList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footerLink {
+  color: var(--on-surface-variant);
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.footerLink:hover {
+  color: var(--electric-accent);
+  transform: translateX(4px);
+}
+
+.footerBottom {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--outline-variant);
+  padding-top: 32px;
+}
+
+@media (min-width: 768px) {
+  .footerBottom {
+    flex-direction: row;
+  }
+}
+
+.footerCopy {
+  color: var(--text-secondary);
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .footerCopy {
+    margin-bottom: 0;
+  }
+}
+
+.footerSocials {
+  display: flex;
+  gap: 24px;
+}
+
+.footerSocialLink {
+  color: var(--on-surface-variant);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.footerSocialLink:hover {
+  color: var(--electric-accent);
+  background-color: rgba(0, 141, 218, 0.05);
+  transform: translateY(-2px);
+}

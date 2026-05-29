@@ -1,0 +1,339 @@
+.aboutHero {
+  position: relative;
+  height: 921px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 var(--container-padding-desktop);
+  overflow: hidden;
+  background-color: var(--surface-black);
+}
+@media (min-width: 768px) {
+  .aboutHero { height: 100vh; }
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.heroBg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+  filter: grayscale(100%);
+  transition: all 1s ease;
+}
+.heroBg img:hover { filter: grayscale(0%); }
+
+.heroContent {
+  position: relative;
+  z-index: 10;
+  max-width: 1200px;
+}
+
+.subtitle {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 24px;
+  display: block;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.title {
+  color: var(--surface-white);
+  max-width: 900px;
+}
+
+.heroAction {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+}
+@media (min-width: 768px) {
+  .heroAction { flex-direction: row; }
+}
+
+.btnPrimary {
+  background-color: var(--surface-white);
+  color: var(--surface-black);
+  padding: 24px 48px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.btnPrimary:hover {
+  background-color: var(--electric-accent);
+  color: var(--surface-white);
+}
+
+.heroDesc {
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 400px;
+  margin-top: 16px;
+}
+@media (min-width: 768px) {
+  .heroDesc { margin-top: 0; }
+}
+
+/* Vision Section */
+.visionSection {
+  padding: 160px var(--container-padding-desktop);
+  background-color: var(--surface-white);
+}
+
+.visionGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .visionGrid { grid-template-columns: repeat(12, 1fr); }
+}
+
+.visionContent {
+  grid-column: span 12;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+@media (min-width: 768px) {
+  .visionContent { grid-column: span 6; }
+}
+
+.visionTitle {
+  color: var(--surface-black);
+  line-height: 1;
+}
+
+.visionDesc {
+  color: var(--text-secondary);
+  max-width: 600px;
+}
+
+.stats {
+  padding-top: 32px;
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  gap: 48px;
+}
+
+.statValue { display: block; color: var(--surface-black); }
+.statLabel { color: var(--text-secondary); text-transform: uppercase; }
+
+.visionImageWrapper {
+  grid-column: span 12;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .visionImageWrapper { grid-column: 8 / span 5; }
+}
+
+.visionImage {
+  aspect-ratio: 3 / 4;
+  border: 1px solid var(--surface-black);
+  padding: 16px;
+}
+.visionImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+.visionBadge {
+  display: none;
+  position: absolute;
+  bottom: -40px;
+  left: -40px;
+  background-color: var(--surface-black);
+  color: var(--surface-white);
+  padding: 32px;
+  width: 256px;
+}
+@media (min-width: 1024px) {
+  .visionBadge { display: block; }
+}
+.visionBadgeTitle { color: rgba(255, 255, 255, 0.5); display: block; margin-bottom: 16px; text-transform: uppercase; }
+
+/* Pillars Section */
+.pillarsSection {
+  padding: 160px var(--container-padding-desktop);
+  background-color: var(--surface-container-low);
+}
+
+.pillarsHeader {
+  margin-bottom: 96px;
+  max-width: 700px;
+}
+.pillarsPreTitle {
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.pillarsTitle {
+  color: var(--surface-black);
+}
+
+.pillarsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+@media (min-width: 768px) {
+  .pillarsGrid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.pillarCard {
+  border: 1px solid var(--surface-black);
+  background-color: var(--surface-white);
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 500px;
+  transition: all 0.5s ease;
+}
+.pillarCard:not(:first-child) {
+  border-top: 0;
+}
+@media (min-width: 768px) {
+  .pillarCard:not(:first-child) { border-top: 1px solid var(--surface-black); border-left: 0; }
+}
+
+.pillarCard:hover {
+  background-color: var(--surface-black);
+}
+
+.pillarIcon { font-size: 48px; color: var(--surface-black); margin-bottom: 32px; transition: color 0.3s ease; }
+.pillarTitle { color: var(--surface-black); margin-bottom: 24px; text-transform: uppercase; transition: color 0.3s ease; }
+.pillarDesc { color: var(--text-secondary); transition: color 0.3s ease; }
+.pillarLink { color: var(--surface-white); text-decoration: underline; opacity: 0; transition: opacity 0.3s ease; padding-top: 32px; }
+
+.pillarCard:hover .pillarIcon,
+.pillarCard:hover .pillarTitle { color: var(--surface-white); }
+.pillarCard:hover .pillarDesc { color: rgba(255, 255, 255, 0.7); }
+.pillarCard:hover .pillarLink { opacity: 1; cursor: pointer; }
+
+/* Global Infra Section */
+.infraSection {
+  padding: 160px 0;
+  background-color: var(--surface-black);
+  color: var(--surface-white);
+  position: relative;
+  overflow: hidden;
+}
+
+.infraContainer {
+  padding: 0 var(--container-padding-desktop);
+  position: relative;
+  z-index: 10;
+}
+
+.infraGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 64px;
+}
+@media (min-width: 1024px) {
+  .infraGrid { grid-template-columns: repeat(12, 1fr); }
+}
+
+.infraContent { grid-column: span 12; }
+@media (min-width: 1024px) { .infraContent { grid-column: span 5; } }
+
+.infraTitle { line-height: 1.1; margin-bottom: 32px; }
+
+.infraFeatureBox {
+  padding: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 32px;
+  transition: border-color 0.3s ease;
+}
+.infraFeatureBox:hover { border-color: var(--surface-white); }
+.infraFeatureLabel { color: rgba(255, 255, 255, 0.5); margin-bottom: 8px; text-transform: uppercase; }
+
+.infraMap {
+  grid-column: span 12;
+  height: 600px;
+  background-color: var(--surface-black);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+@media (min-width: 1024px) { .infraMap { grid-column: span 7; } }
+
+.infraMap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: all 0.7s ease;
+}
+.infraMap:hover img { filter: grayscale(0%); opacity: 0.8; }
+
+.mapStatus {
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+  background-color: var(--surface-white);
+  color: var(--surface-black);
+  padding: 24px;
+  width: 288px;
+  backdrop-filter: blur(12px);
+}
+.statusLabel { display: block; margin-bottom: 8px; text-transform: uppercase; opacity: 0.6; }
+.statusFlex { display: flex; justify-content: space-between; align-items: flex-end; }
+.statusValue { font-size: 32px; font-weight: bold; line-height: 1; }
+.statusUnit { font-size: 10px; text-transform: uppercase; }
+
+/* CTA Section */
+.ctaSection {
+  padding: 160px var(--container-padding-desktop);
+  text-align: center;
+  background-color: var(--surface-white);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.ctaTitle {
+  font-weight: 900;
+  color: var(--surface-black);
+  margin-bottom: 48px;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+}
+
+.ctaButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .ctaButtons { flex-direction: row; }
+}
+
+.btnCtaPrimary {
+  background-color: var(--surface-black);
+  color: var(--surface-white);
+  padding: 24px 64px;
+  transition: all 0.3s ease;
+}
+.btnCtaPrimary:hover { background-color: var(--electric-accent); }
+
+.btnCtaOutline {
+  border: 1px solid var(--surface-black);
+  color: var(--surface-black);
+  padding: 24px 64px;
+  transition: all 0.3s ease;
+}
+.btnCtaOutline:hover {
+  background-color: var(--surface-black);
+  color: var(--surface-white);
+}
