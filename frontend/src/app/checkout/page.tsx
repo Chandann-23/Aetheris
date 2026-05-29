@@ -201,7 +201,7 @@ export default function Checkout() {
                         Midnight Black / 45mm
                       </p>
                       <p className="font-label-mono text-xs font-semibold text-black">
-                        $599.00
+                        ₹599
                       </p>
                     </div>
                   </div>
@@ -222,7 +222,7 @@ export default function Checkout() {
                         Sonic Silver / Gen 2
                       </p>
                       <p className="font-label-mono text-xs font-semibold text-black">
-                        $249.00
+                        ₹249
                       </p>
                     </div>
                   </div>
@@ -232,19 +232,19 @@ export default function Checkout() {
                 <div className="border-t border-[#E5E5E7] pt-6 space-y-3">
                   <div className="flex justify-between text-xs font-medium">
                     <span className="text-[#6E6E73] uppercase tracking-wider">SUBTOTAL</span>
-                    <span className="font-label-mono font-bold">$848.00</span>
+                    <span className="font-label-mono font-bold">₹848</span>
                   </div>
                   <div className="flex justify-between text-xs font-medium">
                     <span className="text-[#6E6E73] uppercase tracking-wider">SHIPPING</span>
-                    <span className="font-label-mono font-bold">$0.00</span>
+                    <span className="font-label-mono font-bold">₹0.00</span>
                   </div>
                   <div className="flex justify-between text-xs font-medium">
                     <span className="text-[#6E6E73] uppercase tracking-wider">ESTIMATED TAX</span>
-                    <span className="font-label-mono font-bold">$67.84</span>
+                    <span className="font-label-mono font-bold">₹68</span>
                   </div>
                   <div className="flex justify-between border-t border-[#E5E5E7] pt-4 text-lg font-bold text-black">
                     <span className="uppercase tracking-tight">TOTAL</span>
-                    <span className="font-label-mono">$915.84</span>
+                    <span className="font-label-mono">₹916</span>
                   </div>
                 </div>
 

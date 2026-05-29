@@ -6,7 +6,7 @@ export default function Products() {
     {
       id: 1,
       name: "Aether-1 Audio",
-      price: "$449.00",
+      price: "₹449",
       desc: "High-fidelity acoustic isolation with custom-engineered beryllium drivers.",
       image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAktS4cDPWPe4X2APpet4WV3HlIL0HgUul5CGM1jhSZMItbYPcjQheQqwoTr3ZkPh__PXBucsNsmWSgb23mgSrIsVWgLArhwxeFcMyRTDcmrnzdt4T2H9oKKo5pz_Masjg1PGRux5reIiXwEaCrUPi8WSStKXJ3Mb3ej1jk4wkPITR88yu_nW3MiF1-njtLWMMqiCqczkZz9CVc9Br-9WvWeZXyDhoVCXYuShCxrmG60ZzTH8KEH32RJ6qFxXSNI6XKRmMKAoBrWDMO",
       badge: "New Release"
@@ -14,7 +14,7 @@ export default function Products() {
     {
       id: 2,
       name: "Slate Pro 14",
-      price: "$1,899.00",
+      price: "₹899",
       desc: "The thinnest workstation ever conceived. Precision machined from 7000-series aluminum.",
       image: "https://lh3.googleusercontent.com/aida-public/AB6AXuC9p5Eu87-SB9dcLMVxRbXOja0K7-VgXcdAXX1FHnxQWSlXibdjtELTnPh4BVHCZvve1bBhjMqJKFxDXJtBTp3AAn24ALpEA1ADE0I4Cg_fCj_sOTGKvS-K5EvplNKYmX6CLJzBSTl0IrAEdoCMsMbkbANtYUe7IbKt9ENNSgYvrqha-vosnFdSeXa4mXl5aBu2Hxq8Qlzdv_fN2-iUWywqpToWmYtTwmGEhrMsfmWUHQ-iXzknfXiWgTBXif35YU6A3Hn7sD2H5vqH",
       badge: "Limited Edition"
@@ -22,28 +22,28 @@ export default function Products() {
     {
       id: 3,
       name: "Void Earbuds",
-      price: "$199.00",
+      price: "₹199",
       desc: "Translucent geometry meets immersive spatial audio. Designed to disappear.",
       image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDDfDe7AU23aCW9p9EwNi0bvBLgy4eCceu2SJ3MygGT8xma-73eGkls8UDXzugiFEq5IxCb5NkrpGjz4fquek83mBC3iE5aGk4aQ7KWwOPqyZzhk_f-rIFuTTDjHJ2FHmhVx6Fe624JQlv8WWyaIxlyfVssHv9pyRo2-9AleLmvQYfxr6h9kUYexMmTPXDPUZXo0OtiUXAuwqZHxow3-btxSyQIXRC5r0cwjgh4W4cWU6M_ID6UTCpum4NCKocGIK32UUzDmOnEg1WH"
     },
     {
       id: 4,
       name: "Temporal Core",
-      price: "$899.00",
+      price: "₹799",
       desc: "The nexus of your smart infrastructure. Advanced encryption meets neural processing.",
       image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBQ58KpOKa9pumcpvqPNNwBhx8EYGe0drlEN6kalq5YNqMpxeIH3-dFQp-XM4dF-hSXwKSyQgEmCZyZvpigygBZqfRfgWH7i5ueJiME8-izyFxaIWzqBIzaR8ikBDnwsdVt2KQ_23yY8lncUEuqdKIg6sV9t7zpM9hZshzJcnsiuKhFJBbFEx1zC8YmgfjmTQeXmbQfBo94dHJ1FiuHArOc9OOWn0VlucdTTPn66WSWWjtybXdAeis0o-uEwvE6fNWNa6YfyoqZGzJ2"
     },
     {
       id: 5,
       name: "Quantum Nexus",
-      price: "$229.00",
+      price: "₹299",
       desc: "Low-profile mechanical switches designed for speed and surgical tactile feedback.",
       image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAMyvUxs-fz5YZ-XGasFsmLdnSSykH_gpwd7gvmyGKhr9FCXztDH2d5K2oDA8LyXYbB9r7gKpe45FieOumaMEcBltDDFjxFZeg-kA-VpmkI-Hod_DxQMcUUxmBq7hi7LSH4gltmyS_nGA7WuCoulxtYfnNs_r6ft_tS8RFmN4XU4RvBzs9RoqOfIbyp-HPFbvioog_FnagnJQm8KpkD7QEsBNmdcJxGwBLbs87MEwnYY1ha7m94KAci9cKCCz1Tm-WbeVADyuGHCZLd"
     },
     {
       id: 6,
       name: "Vector Shell",
-      price: "$275.00",
+      price: "₹349",
       desc: "Advanced waterproof technical knit with modular pockets and laser-cut ventilation.",
       image: "https://lh3.googleusercontent.com/aida-public/AB6AXuA0eJNKV4hxuWCeusEoLcry9_HMDAbW4FIcs5pOSPsp7AWxqhnHrPLtOq1i-sIFaDTIw3bVdqHvMs9BgESqpKfUQyIpzCD8Rny6a1vmWAHPgFUelcnYMOlB_qG5Gg07mIbhUKdnBzFVBLGXwT5MtN90oNJJWda_mui2z2V5PH6XWbFf5Qe9INCA6asZyd0lHTe5pLa9zB2mJClM8CQxOkj-MP9o-a9QCF59NBle0p__4KUqFZd8tELVRO5Qj-QpyFnronHiM3VM6UZT"
     }
