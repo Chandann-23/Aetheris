@@ -50,32 +50,32 @@ export default function Home() {
           <div className={styles.grid4}>
             {[
               {
-                title: 'Aether-1 Audio',
-                desc: 'Pure Acoustic Isolation',
-                price: '₹499',
+                title: 'boAt Rockerz 450',
+                desc: 'Bluetooth Wireless Sound',
+                price: '₹1,499',
                 tag: 'Limited',
-                img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDq8VYhF_B1b8-laSJWmPE_nxUFNjDnxHjWFB2nbmJOo5Dx8vmMBBaz858iL3Ji4TOLr1YpJ55qnVEkvOXTcBbXBjOKND5JizQIRFKAsdPcnrtFHcJdMs93q56pTsg1dFDCMiF167l9mJnoJnyW3VAYdC2FfsObCJcHB0WpfIK_i_8-peiFF0xrioNkK4AuxRTLRMBvBiZtTaeICUAstXW3bhku286XR2e5MlqOsAXSkCw0eUz4f31c55Nv916zswU5oIyXnz4-2L1Q'
+                img: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80'
               },
               {
-                title: 'Slate Pro 14',
-                desc: 'Infinite Productivity',
-                price: '₹899',
+                title: 'Redgear Shadow Blade',
+                desc: 'Mechanical Click Keyboard',
+                price: '₹2,499',
                 tag: null,
-                img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDe1I_wnZjOVrSTlq6e5YE9cDn_l-seQwIsklxsnyTR-AsX3hxmowYsXVLR2TOAhA4dDiDEL6y-gttJaALS6jwEkTAMKEzfFZnNc-YK7SFMdLkOaFbbSZeDEUghXCYU3iGpbBhDRB5swcsDJkQDrhqK93cOxmPwH-xKyo3pG05IW-yNvqy2xfG6yTnBt30m2zDzOms-gvPGT2s_r0bSkHCWcJ7Kdpl4fOtfVHZ3JXCqR55GNZDEWD1aZFZ09geGbRiBJhUhhT5P2wK1'
+                img: 'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=600&q=80'
               },
               {
-                title: 'Temporal Core',
-                desc: 'Precision Horology',
-                price: '₹249',
+                title: 'Philips Hue Smart Bulb',
+                desc: 'Dimmable Ambient Lighting',
+                price: '₹1,999',
                 tag: null,
-                img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCnMG_ruSwoYvhBdzPXLi7AecU5dstB8T-adHtPww3GHtLmGg7LIwwD0SA7wIj4TyJ018P5rQIrVpd_d8TYgXOnUrKEx6wIdZ_d5nFwNEigXtQXZEz56niOKJmk_6TYpqIidJuWOBR_gLvXJMHPnjSxdOdWgP_o92TteoOB6BUmLAgQyGaMQBPUFDOnZgFwl-Z3TcV9HpQDHqLEZ_N_BuSDRHVU9N-JD20XsxVbQt6GhJm00ulLBfM7DnCzLZ1mTRnJkJtW6Z25LJ1L'
+                img: 'https://images.unsplash.com/photo-1550985616-10810253b84d?auto=format&fit=crop&w=600&q=80'
               },
               {
-                title: 'Void Earbuds',
-                desc: 'Zero Noise Policy',
-                price: '₹189',
+                title: 'OnePlus Nord Buds 2r',
+                desc: 'True Wireless Audio Buds',
+                price: '₹1,999',
                 tag: null,
-                img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDug6H8qy9Cdfl_O9FzQ8sHuhk2eUCxHhllgxLq9AsOzgo9VOhcI9HxT8Txx-IEmBrXfdpPB2ZS6XiWlMZ8ZHtb1Nqqsl07wsMJVl7jUGcmxxTjZts_qoG4H-yHRQkDZh7ZD4pCvbkTbnAkUaPLI9nbbmBSZ3oDG9pxeSWTBHyE3wE1ZSA9_6DW56DVj5oWzgrGW-6cxZPP-qLde7eJdQaKDS-8ZUtH1HVntPiwHygRwH6M3867oL8kVZkON0BHvSiQKo9zBlJeGkuF'
+                img: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=600&q=80'
               }
             ].map((p, i) => (
               <ProductCard key={i} product={p} />
@@ -105,7 +105,7 @@ export default function Home() {
             <div className={styles.infraVisual}>
               <div className={styles.infraCircle}>
                 <div className={styles.infraInnerCircle}>
-                  <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGW42BDy0q6kNcOCd_Hhwo2tJR3y9LSe3g9d2PfTW8lWCcVMgn556JOypvRYppvy8qPJ7etmbnkzPZYSuLZwtWoMVrZ7Q9oI6NGtlE51R7AXkZos9iHd3jpES2Y0sfYdheHhi4VchuJWSsDOl6It0U86U9k7_GNjiPN8NME7qFviFQQRPwQM9QV5B7byyjlSYqTVDlTG8RSPt6b6KJwM8Lg-tyYzBwopeIP7KWzY_mQwYXx6mj6WqzYoGgrnlVvydMC_rJxoYEJZrv" alt="Global infrastructure" />
+                  <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" alt="Global server network infrastructure" />
                 </div>
               </div>
             </div>

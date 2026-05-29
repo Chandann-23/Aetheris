@@ -10,8 +10,8 @@ export default function Services() {
       <section className={styles.servicesHero}>
         <div className={styles.heroBg}>
           <img 
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMyvUxs-fz5YZ-XGasFsmLdnSSykH_gpwd7gvmyGKhr9FCXztDH2d5K2oDA8LyXYbB9r7gKpe45FieOumaMEcBltDDFjxFZeg-kA-VpmkI-Hod_DxQMcUUxmBq7hi7LSH4gltmyS_nGA7WuCoulxtYfnNs_r6ft_tS8RFmN4XU4RvBzs9RoqOfIbyp-HPFbvioog_FnagnJQm8KpkD7QEsBNmdcJxGwBLbs87MEwnYY1ha7m94KAci9cKCCz1Tm-WbeVADyuGHCZLd" 
-            alt="Quantum Nexus Keyboard close-up" 
+            src="https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?auto=format&fit=crop&w=1200&q=80" 
+            alt="Premium modern workspace desk setup" 
           />
         </div>
         <div className={styles.heroContent}>
@@ -51,8 +51,8 @@ export default function Services() {
             </div>
             <div className={styles.hlCard1Bg}>
               <img 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD93nBixz0Of9De0r4g0i-hUAUrJQYAAw9rI6CbNlFIJWwMpLTFEDD8S3MPr876FXafVdsZXacsK7C53cQWlc4OgmCiNxpuxyP9eiL9o3ryTjDCaObyHdhvSrgYw89gE6pRcVNC2rSAun-qlByH7m1ZxIi80rcLCsPAtWeOxT21EboKNoxGq6IPKxwuwIeXZz98qTNRY1Ls0nXhOAnNYQ_zyBc03JmFYdLjbUo_qPDiSHWtQP0USw_cXBlGNwug2Ijh5wrueg8j5eYG" 
-                alt="Workspace Curation Outlines" 
+                src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" 
+                alt="Modern studio workspace architecture design and blueprint plan" 
               />
             </div>
           </div>

@@ -9,8 +9,8 @@ export default function About() {
       <section className={styles.aboutHero}>
         <div className={styles.heroBg}>
           <img 
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9p5Eu87-SB9dcLMVxRbXOja0K7-VgXcdAXX1FHnxQWSlXibdjtELTnPh4BVHCZvve1bBhjMqJKFxDXJtBTp3AAn24ALpEA1ADE0I4Cg_fCj_sOTGKvS-K5EvplNKYmX6CLJzBSTl0IrAEdoCMsMbkbANtYUe7IbKt9ENNSgYvrqha-vosnFdSeXa4mXl5aBu2Hxq8Qlzdv_fN2-iUWywqpToWmYtTwmGEhrMsfmWUHQ-iXzknfXiWgTBXif35YU6A3Hn7sD2H5vqH" 
-            alt="Slate Pro 14 Workstation" 
+            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80" 
+            alt="Aetheris Minimalist Design Workspace Studio" 
           />
         </div>
         <div className={styles.heroContent}>
@@ -51,8 +51,8 @@ export default function About() {
           <div className={styles.visionImageWrapper}>
             <div className={styles.visionImage}>
               <img 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAktS4cDPWPe4X2APpet4WV3HlIL0HgUul5CGM1jhSZMItbYPcjQheQqwoTr3ZkPh__PXBucsNsmWSgb23mgSrIsVWgLArhwxeFcMyRTDcmrnzdt4T2H9oKKo5pz_Masjg1PGRux5reIiXwEaCrUPi8WSStKXJ3Mb3ej1jk4wkPITR88yu_nW3MiF1-njtLWMMqiCqczkZz9CVc9Br-9WvWeZXyDhoVCXYuShCxrmG60ZzTH8KEH32RJ6qFxXSNI6XKRmMKAoBrWDMO" 
-                alt="Aether-1 Audio Headphones" 
+                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80" 
+                alt="Bespoke materials and audiophile headphones close-up design detail" 
               />
             </div>
             <div className={styles.visionBadge}>
@@ -128,8 +128,8 @@ export default function About() {
             </div>
             <div className={styles.infraMap}>
               <img 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDlA-07Rd9tZvl_4H44uNNmZ4HsHmMtB4p0rh3s9Fqg5OoY6LhkZr1hFgjXXG3BODsL6A8Ilc3uN3mD2UiniG7aFuokJBMnFvS25StnAAOyxJqM4THCxGcSfHiFcVd-WfIAT5dBk6_kZg8FoO6LEMlPuBOlEv604OTWlBY4ffYR55E-_K240-w3lyriMf8uis3YYIVC_1_dONda_2pxzveQ9dSP2WqufQKF062iEWvqY-3t0k13eujYuKCXvvP8pm3d4TICKlpbSCr" 
-                alt="Aetheris Global Dispatch Network" 
+                src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80" 
+                alt="Aetheris Global Dispatch and Surgical Packaging Logistics Network" 
               />
               <div className={styles.mapStatus}>
                 <span className={`${styles.statusLabel} font-label-mono`}>Fulfillment Status</span>
