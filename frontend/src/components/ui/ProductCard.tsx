@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import styles from '../../app/page.module.css';
+import { useCartStore } from '@/store/useCartStore';
 
 interface Product {
   title: string;
@@ -15,6 +16,19 @@ interface ProductCardProps {
 }
 
 export default function ProductCard({ product }: ProductCardProps) {
+  const addToCart = useCartStore((state) => state.addToCart);
+
+  const handleAddToCart = () => {
+    const numericPrice = parseInt(product.price.replace(/[^\d]/g, ''), 10) || 0;
+    addToCart({
+      id: product.title.toLowerCase().replace(/\s+/g, '-'), // Stable ID based on title
+      name: product.title,
+      price: numericPrice,
+      desc: product.desc,
+      image: product.img
+    });
+  };
+
   return (
     <div className={styles.productCard}>
       <div className={styles.productImage}>
@@ -29,8 +43,14 @@ export default function ProductCard({ product }: ProductCardProps) {
           </div>
           <span className={`${styles.productPrice} font-label-mono`}>{product.price}</span>
         </div>
-        <button className={`${styles.btnCart} font-label-mono`}>ADD TO CART</button>
+        <button 
+          className={`${styles.btnCart} font-label-mono`}
+          onClick={handleAddToCart}
+        >
+          ADD TO CART
+        </button>
       </div>
     </div>
   );
 }
+

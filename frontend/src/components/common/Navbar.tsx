@@ -4,14 +4,18 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { SignInButton, UserButton, useUser } from '@clerk/nextjs';
 import styles from './Navbar.module.css';
+import { useCartStore } from '@/store/useCartStore';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const { isSignedIn } = useUser();
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
+  const [mounted, setMounted] = useState(false);
+  const totalItems = useCartStore((state) => state.getTotalItems());
 
   useEffect(() => {
+    setMounted(true);
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
@@ -63,7 +67,9 @@ export default function Navbar() {
 
           <Link href="/checkout" className={styles.iconBtn} suppressHydrationWarning>
             <span className="material-symbols-outlined" style={{ color: 'var(--on-surface)' }}>shopping_cart</span>
-            <span className={styles.badge}>2</span>
+            {mounted && totalItems > 0 && (
+              <span className={styles.badge}>{totalItems}</span>
+            )}
           </Link>
           <button 
             className={`${styles.iconBtn} ${styles.menuToggle}`} 

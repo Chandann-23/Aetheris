@@ -1,7 +1,10 @@
 "use client";
 import styles from './page.module.css';
+import { useCartStore } from '@/store/useCartStore';
 
 export default function Products() {
+  const addToCart = useCartStore((state) => state.addToCart);
+
   const products = [
     {
       id: 1,
@@ -49,6 +52,17 @@ export default function Products() {
     }
   ];
 
+  const handleQuickAdd = (product: typeof products[0]) => {
+    const numericPrice = parseInt(product.price.replace(/[^\d]/g, ''), 10) || 0;
+    addToCart({
+      id: product.name.toLowerCase().replace(/\s+/g, '-'), // Stable ID matching ProductCard
+      name: product.name,
+      price: numericPrice,
+      desc: product.desc,
+      image: product.image
+    });
+  };
+
   return (
     <main>
       <header className={styles.header}>
@@ -88,7 +102,12 @@ export default function Products() {
                 <img src={product.image} alt={product.name} />
                 <div className={styles.productHoverOverlay}></div>
                 <div className={styles.quickAddContainer}>
-                  <button className={`${styles.btnQuickAdd} font-label-mono`}>Quick Add</button>
+                  <button 
+                    className={`${styles.btnQuickAdd} font-label-mono`}
+                    onClick={() => handleQuickAdd(product)}
+                  >
+                    Quick Add
+                  </button>
                 </div>
               </div>
               <div className={styles.productInfo}>
@@ -107,6 +126,7 @@ export default function Products() {
           ))}
         </div>
       </section>
+
 
       <section className={styles.newsletterSection}>
         <div className={styles.nlContainer}>
